@@ -1,0 +1,7 @@
+{
+  "name": "dnd-helper",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
