@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "rpg-awesome": "^0.2.0",
+    "sass": "^1.54.9"
+  }
+}

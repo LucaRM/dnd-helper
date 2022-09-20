@@ -1,0 +1,47 @@
+/* Definição de variáveis */
+
+$fonte-OpenSans-bold: 'OpenSans-Bold';
+$fonte-OpenSans-boldItalic: 'OpenSans-BoldItalic';
+$fonte-OpenSans-extraBold: 'OpenSans-ExtraBold';
+$fonte-OpenSans-extraBoldItalic: 'OpenSans-ExtraBoldItalic';
+$fonte-OpenSans-Italic: 'OpenSans-Italic';
+$fonte-OpenSans-light: 'OpenSans-Light';
+$fonte-OpenSans-lightItalic: 'OpenSans-LightItalic';
+$fonte-OpenSans-media: 'OpenSans-Medium';
+$fonte-OpenSans-mediaItalic: 'OpenSans-MediumItalic';
+$fonte-OpenSans-normal: 'OpenSans-Regular';
+$fonte-OpenSans-semiBold: 'OpenSans-SemiBold';
+$fonte-OpenSans-semiBoldItalic: 'OpenSans-SemiBoldItalic';
+
+/* Definição de variáveis */
+
+$tamanho-foto-perfil: 200px;
+$tamanho-foto-criadores: 100px;
+
+$medida-principal: 62px;
+
+$medida-border-radius: 4.85px;
+
+$medida-footer: 290px;
+$medida-footer-mobile: 420px;
+
+$medida-header: 210px;
+
+/* Breakpoints */
+$bp-xg: 3840px; // 4k
+$bp-lg: 1366px; // Padrão
+$bp-md: 1024px; // iPad Pro
+$bp-sm: 835px; // iPad
+$bp-xm: 375px; // iPhone X
+
+$card-size: 369px;
+$card-size-border: calc(#{$card-size} + 2px);
+$card-gap: 26px;
+$mobile-padding: 38px;
+
+// 66 margin (interpretada) + 38 padding = 104px laterais - desktop padding
+
+$four-cards-width: calc((#{$card-size} * 4) + (#{$card-gap} * 3) + (#{$mobile-padding} * 2)); // 1630px;
+$three-cards-width: calc((#{$card-size} * 3) + (#{$card-gap} * 2) + (#{$mobile-padding} * 2)); // 1235px;
+$two-cards-width: calc((#{$card-size} * 2) + #{$card-gap} + (#{$mobile-padding} * 2)); // 840px;
+$one-cards-width: calc(#{$card-size} + (#{$mobile-padding} * 2)); // 445px;

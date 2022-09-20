@@ -1,0 +1,68 @@
+@import './variables';
+
+@mixin link-como-texto {
+	text-decoration: none;
+	color: inherit;
+}
+
+@mixin nao-selecionavel {
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+}
+
+@mixin selecionavel {
+	-webkit-user-select: unset; /* Safari */
+	-moz-user-select: unset; /* Old versions of Firefox */
+	-ms-user-select: unset; /* Internet Explorer/Edge */
+	user-select: unset;
+
+	-webkit-touch-callout: unset; /* iOS Safari */
+	-khtml-user-select: unset; /* Konqueror HTML */
+}
+
+@mixin disabled {
+	pointer-events: none;
+	filter: blur(2px);
+}
+
+@mixin default-breakpoints-list {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: $mobile-padding;
+	padding-right: $mobile-padding;
+	width: 100%;
+	max-width: $four-cards-width;
+
+	@media (max-width: $four-cards-width) {
+		max-width: 100%;
+		width: $three-cards-width;
+	}
+
+	@media (max-width: $three-cards-width) {
+		width: $two-cards-width;
+	}
+
+	@media (max-width: $two-cards-width) {
+		width: $one-cards-width;
+	}
+
+	@media (max-width: $one-cards-width) {
+		width: 100vw;
+	}
+}
+
+@mixin degrade {
+	background: transparent linear-gradient(91deg, #fb00d5 0%, #009cf2 100%) 0% 0% no-repeat padding-box;
+}
+
+@mixin newDegrade {
+	background: linear-gradient($cor-fundo-preto, $cor-fundo-preto) padding-box,
+		linear-gradient(to right, #fb00d5 0%, #009cf2 100%) border-box;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
